@@ -22,9 +22,9 @@ describe('Lamborghini', () => {
     cy.get('[aria-label="Hide menu"]').click()
     for (let i = 0; i < 9; i++) { 
     cy.get('[aria-label="Next"]').click()
-    cy.wait(1000)
-
-    }
+    cy.wait(1000) 
+  
+  }
     
     cy.get('[aria-label="Setting menu"]').click()
     cy.get("[lccariahidden='']").eq(0).click({force : true})
@@ -35,9 +35,9 @@ describe('Lamborghini', () => {
     for (let i = 0; i < 10; i++) { 
     cy.get('[aria-label="Next"]').click()
     cy.wait(1000)
-     
-    }
-
+  
+  }
+   
     cy.get('[aria-label="Setting menu"]').click()
     cy.get("[lccariahidden='']").eq(0).click({force : true})
     cy.get('.option-button').eq(0).click()
@@ -46,9 +46,9 @@ describe('Lamborghini', () => {
     cy.wait(5000)
     for (let i = 0; i < 10; i++) { 
     cy.get('[aria-label="Next"]').click()
-    cy.wait(1000)
-
-    }
+    cy.wait(1000)}
+    cy.get('.checkout-button').click()
+    
   
     })
    
